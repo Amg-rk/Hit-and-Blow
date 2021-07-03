@@ -23,12 +23,12 @@ public class GameControl : MonoBehaviour
 
     void PutSphereToHole()
     {
+        float maxDis = 10;
+        RaycastHit raycastHit;
+        Ray targetRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+
         if (Input.GetMouseButtonDown(0))
         {
-            Ray targetRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit raycastHit;
-            float maxDis = 10;
-
             if (!Physics.Raycast(targetRay, out raycastHit, maxDis)) { return; }
 
             choseObject = raycastHit.collider.gameObject;
@@ -44,11 +44,7 @@ public class GameControl : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
-
             if (choseMaterial == null) { return; }
-            Ray targetRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit raycastHit;
-            float maxDis = 10;
 
             if (!Physics.Raycast(targetRay, out raycastHit, maxDis)) { return; }
 
@@ -59,4 +55,6 @@ public class GameControl : MonoBehaviour
 
         }
     }
+
+    void 
 }
