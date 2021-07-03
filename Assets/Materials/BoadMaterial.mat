@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SphereMaterial6
+  m_Name: BoadMaterial
   m_Shader: {fileID: 4800000, guid: 630b07f1142b0473fbb4a366f4ac637c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -76,8 +76,8 @@ Material:
     - _ZWrite: 1
     - __dummy__: 0
     m_Colors:
-    - _Color: {r: 1, g: 0, b: 1, a: 1}
+    - _Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HColor: {r: 0.785, g: 0.785, b: 0.785, a: 1}
-    - _SColor: {r: 0.54901963, g: 0, b: 0.54901963, a: 1}
+    - _HColor: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
+    - _SColor: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
   m_BuildTextureStacks: []
