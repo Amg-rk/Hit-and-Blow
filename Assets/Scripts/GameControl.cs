@@ -61,7 +61,7 @@ public class GameControl : MonoBehaviour
         ShowAnswer();
     }
 
-    void ShowAnswer()
+    public void ShowAnswer()
     {
         CreateAnswer createAnswer = answerTrans.GetComponent<CreateAnswer>();
         for (int i=0; i < createAnswer.AnswerMaterialsNumber; i++)
