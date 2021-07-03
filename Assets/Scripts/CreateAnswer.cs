@@ -5,7 +5,13 @@ using UnityEngine;
 public class CreateAnswer : MonoBehaviour
 {
     [SerializeField] Material[] materials;
+
     [SerializeField] Renderer[] answerSphereRenderers;
+    public Renderer[] AnswerSphereRenderers
+    {
+        get { return answerSphereRenderers; }
+        private set { }
+    }
 
     Material[] answerMaterials;
     public Material[] AnswerMaterials{
@@ -21,7 +27,6 @@ public class CreateAnswer : MonoBehaviour
         private set { }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         answerMaterials = new Material[answerMaterialsNumber];
@@ -40,11 +45,9 @@ public class CreateAnswer : MonoBehaviour
 
             answerMaterialNumbers[i] = rand;
             answerMaterials[i] = materials[rand];
-            answerSphereRenderers[i].material = materials[rand];
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         

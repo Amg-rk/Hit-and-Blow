@@ -6,16 +6,16 @@ using UnityEngine;
 
 public class GameControl : MonoBehaviour
 {
+    [SerializeField] Transform answerTrans;
+
     GameObject choseObject;
     Material choseMaterial;
 
-    // Start is called before the first frame update
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         PutSphereToHole();
@@ -52,6 +52,21 @@ public class GameControl : MonoBehaviour
             if (!choseObject.CompareTag("Hole")) { return; }
             choseObject.GetComponent<Renderer>().material = choseMaterial;
 
+        }
+    }
+
+    public void Clear()
+    {
+        Debug.Log("clear!");
+        ShowAnswer();
+    }
+
+    void ShowAnswer()
+    {
+        CreateAnswer createAnswer = answerTrans.GetComponent<CreateAnswer>();
+        for (int i=0; i < createAnswer.AnswerMaterialsNumber; i++)
+        {
+            createAnswer.AnswerSphereRenderers[i].material = createAnswer.AnswerMaterials[i];
         }
     }
 }

@@ -10,17 +10,19 @@ public class ColumnControl : MonoBehaviour
     [SerializeField] Transform[] hintSphereTrans;
     [SerializeField] Material hitMaterial;
     [SerializeField] Material blowMaterial;
+    [SerializeField] GameControl gameControl;
+
     Material[] answerMaterials;
     Material[] columnMaterials;
+
     int answerMaterialsNumber;
-    // Start is called before the first frame update
+
     void Start()
     {
         answerMaterials = answerTrans.GetComponent<CreateAnswer>().AnswerMaterials;
         answerMaterialsNumber = answerTrans.GetComponent<CreateAnswer>().AnswerMaterialsNumber;
     }
 
-    // Update is called once per frame
     void Update()
     {
         JudgeButtonON();
@@ -106,7 +108,7 @@ public class ColumnControl : MonoBehaviour
 
         if(hitCount == answerMaterialsNumber)
         {
-            Debug.Log("clear!");
+            gameControl.Clear();
         }
     }
 

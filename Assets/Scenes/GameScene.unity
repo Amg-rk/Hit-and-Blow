@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: answerTrans
       value: 
       objectReference: {fileID: 2027482014}
+    - target: {fileID: 7514724339812939558, guid: 77e962e68bcac426db4709fac412c151, type: 3}
+      propertyPath: gameControl
+      value: 
+      objectReference: {fileID: 519420030}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e962e68bcac426db4709fac412c151, type: 3}
 --- !u!1 &230191111
@@ -514,6 +518,10 @@ PrefabInstance:
       propertyPath: answerTrans
       value: 
       objectReference: {fileID: 2027482014}
+    - target: {fileID: 7514724339812939558, guid: 77e962e68bcac426db4709fac412c151, type: 3}
+      propertyPath: gameControl
+      value: 
+      objectReference: {fileID: 519420030}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e962e68bcac426db4709fac412c151, type: 3}
 --- !u!1 &519420028
@@ -555,6 +563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25702d8e5d14a492eacf7f2de24333e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answerTrans: {fileID: 2027482014}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1030,6 +1039,10 @@ PrefabInstance:
       propertyPath: answerTrans
       value: 
       objectReference: {fileID: 2027482014}
+    - target: {fileID: 7514724339812939558, guid: 77e962e68bcac426db4709fac412c151, type: 3}
+      propertyPath: gameControl
+      value: 
+      objectReference: {fileID: 519420030}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e962e68bcac426db4709fac412c151, type: 3}
 --- !u!1 &830730805
@@ -1267,6 +1280,10 @@ PrefabInstance:
       propertyPath: answerTrans
       value: 
       objectReference: {fileID: 2027482014}
+    - target: {fileID: 7514724339812939558, guid: 77e962e68bcac426db4709fac412c151, type: 3}
+      propertyPath: gameControl
+      value: 
+      objectReference: {fileID: 519420030}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e962e68bcac426db4709fac412c151, type: 3}
 --- !u!1001 &1089697788
@@ -1328,6 +1345,10 @@ PrefabInstance:
       propertyPath: answerTrans
       value: 
       objectReference: {fileID: 2027482014}
+    - target: {fileID: 7514724339812939558, guid: 77e962e68bcac426db4709fac412c151, type: 3}
+      propertyPath: gameControl
+      value: 
+      objectReference: {fileID: 519420030}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e962e68bcac426db4709fac412c151, type: 3}
 --- !u!1 &1142741366
@@ -1800,6 +1821,10 @@ PrefabInstance:
       propertyPath: answerTrans
       value: 
       objectReference: {fileID: 2027482014}
+    - target: {fileID: 7514724339812939558, guid: 77e962e68bcac426db4709fac412c151, type: 3}
+      propertyPath: gameControl
+      value: 
+      objectReference: {fileID: 519420030}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e962e68bcac426db4709fac412c151, type: 3}
 --- !u!1001 &2119305643
@@ -1861,6 +1886,10 @@ PrefabInstance:
       propertyPath: answerTrans
       value: 
       objectReference: {fileID: 2027482014}
+    - target: {fileID: 7514724339812939558, guid: 77e962e68bcac426db4709fac412c151, type: 3}
+      propertyPath: gameControl
+      value: 
+      objectReference: {fileID: 519420030}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e962e68bcac426db4709fac412c151, type: 3}
 --- !u!1001 &707675031293114889
@@ -1926,5 +1955,9 @@ PrefabInstance:
       propertyPath: answerTrans
       value: 
       objectReference: {fileID: 2027482014}
+    - target: {fileID: 7514724339812939558, guid: 77e962e68bcac426db4709fac412c151, type: 3}
+      propertyPath: gameControl
+      value: 
+      objectReference: {fileID: 519420030}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e962e68bcac426db4709fac412c151, type: 3}
