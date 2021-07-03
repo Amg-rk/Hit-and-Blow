@@ -52,6 +52,13 @@ MonoBehaviour:
   - {fileID: 2499338791655467079}
   - {fileID: 899009225121833343}
   - {fileID: 5732704741291125596}
+  hintSphereTrans:
+  - {fileID: 2219351068332715685}
+  - {fileID: 6630862501265289464}
+  - {fileID: 6776763620317334501}
+  - {fileID: 1225847687545499342}
+  hitMaterial: {fileID: 2100000, guid: c86b9a543282b4ba590f251161d715e9, type: 2}
+  blowMaterial: {fileID: 2100000, guid: 35d4cfc70f1c543fc8b15362e7204992, type: 2}
 --- !u!1 &707675032070648898
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5616767521650304849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0.25, z: -1}
+  m_LocalPosition: {x: 0.3, y: 0.25, z: -1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 4215854731920488693}
@@ -817,7 +824,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7931494681657750806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0.25, z: -1}
+  m_LocalPosition: {x: -0.3, y: 0.25, z: -1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 4215854731920488693}

@@ -7,6 +7,9 @@ public class ColumnControl : MonoBehaviour
     [SerializeField] Transform hintObjectTrans;
     [SerializeField] Transform answerTrans;
     [SerializeField] Transform[] columnSphereTrans;
+    [SerializeField] Transform[] hintSphereTrans;
+    [SerializeField] Material hitMaterial;
+    [SerializeField] Material blowMaterial;
     Material[] answerMaterials;
     Material[] columnMaterials;
     int answerMaterialsNumber;
@@ -39,7 +42,6 @@ public class ColumnControl : MonoBehaviour
 
         }
     }
-
 
     void Judge()
     {
@@ -98,6 +100,26 @@ public class ColumnControl : MonoBehaviour
             }
             */
         }
-        Debug.Log($"hit:{hitCount},blow:{blowCount}");
+
+        ShowHint(hitCount, blowCount);
+        //Debug.Log($"hit:{hitCount},blow:{blowCount}");
+
+        if(hitCount == answerMaterialsNumber)
+        {
+            Debug.Log("clear!");
+        }
+    }
+
+    void ShowHint(int hitCount, int blowCount)
+    {
+        for(int i=0; i < hitCount; i++)
+        {
+            hintSphereTrans[i].GetComponent<Renderer>().material = hitMaterial;
+        }
+
+        for (int j=hitCount; j < hitCount + blowCount; j++)
+        {
+            hintSphereTrans[j].GetComponent<Renderer>().material = blowMaterial;
+        }
     }
 }
