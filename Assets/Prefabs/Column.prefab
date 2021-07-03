@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 707675031161153300}
+  - component: {fileID: 7514724339812939558}
   m_Layer: 0
   m_Name: Column
   m_TagString: Untagged
@@ -32,6 +33,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7514724339812939558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707675031161153301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bbb855ed30f49679acfb586cd57a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hintObjectTrans: {fileID: 4215854731920488693}
+  answerTrans: {fileID: 0}
+  columnSphereTrans:
+  - {fileID: 4482825979576354387}
+  - {fileID: 2499338791655467079}
+  - {fileID: 899009225121833343}
+  - {fileID: 5732704741291125596}
 --- !u!1 &707675032070648898
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,7 +159,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707675032983883750}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children: []
   m_Father: {fileID: 4215854731920488693}
@@ -300,9 +320,8 @@ GameObject:
   - component: {fileID: 6776763620317334501}
   - component: {fileID: 7234604857580797930}
   - component: {fileID: 1393068048858975406}
-  - component: {fileID: 3443003362068922156}
   m_Layer: 0
-  m_Name: Sphere (2)
+  m_Name: HintSphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -316,7 +335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2232718204590578205}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 2.75, z: -1}
+  m_LocalPosition: {x: -0.3, y: -0.25, z: -1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 4215854731920488693}
@@ -371,19 +390,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3443003362068922156
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2232718204590578205}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2499991559985570846
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4215854731920488693}
+  - component: {fileID: 3985525006238281467}
   m_Layer: 0
   m_Name: Hint
   m_TagString: Untagged
@@ -598,7 +605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4175877455088697163}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 707675032983883769}
@@ -609,6 +616,19 @@ Transform:
   m_Father: {fileID: 707675031161153300}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3985525006238281467
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4175877455088697163}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2, y: 1.2, z: 1.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5616767521650304849
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,9 +640,8 @@ GameObject:
   - component: {fileID: 6630862501265289464}
   - component: {fileID: 9037397161137793094}
   - component: {fileID: 809115691213559808}
-  - component: {fileID: 824247425561224794}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: HintSphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -636,7 +655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5616767521650304849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 3.25, z: -1}
+  m_LocalPosition: {x: -0.3, y: 0.25, z: -1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 4215854731920488693}
@@ -691,19 +710,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &824247425561224794
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5616767521650304849}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7218782578453460287
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,9 +721,8 @@ GameObject:
   - component: {fileID: 1225847687545499342}
   - component: {fileID: 792197598742210857}
   - component: {fileID: 6437642817581796274}
-  - component: {fileID: 3266764479520407390}
   m_Layer: 0
-  m_Name: Sphere (3)
+  m_Name: HintSphere (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -731,7 +736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7218782578453460287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 2.75, z: -1}
+  m_LocalPosition: {x: 0.3, y: -0.25, z: -1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 4215854731920488693}
@@ -786,19 +791,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3266764479520407390
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7218782578453460287}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7931494681657750806
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,9 +802,8 @@ GameObject:
   - component: {fileID: 2219351068332715685}
   - component: {fileID: 5158597333324938640}
   - component: {fileID: 282546360315066228}
-  - component: {fileID: 1182079369863944653}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: HintSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -826,7 +817,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7931494681657750806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 3.25, z: -1}
+  m_LocalPosition: {x: 0.3, y: 0.25, z: -1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 4215854731920488693}
@@ -881,19 +872,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &1182079369863944653
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7931494681657750806}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8477596620752655610
 GameObject:
   m_ObjectHideFlags: 0

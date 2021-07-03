@@ -38,7 +38,6 @@ public class GameControl : MonoBehaviour
                 return;
             }
             choseMaterial = choseObject.GetComponent<Renderer>().material;
-            Debug.Log("Get Material");
 
         }
 

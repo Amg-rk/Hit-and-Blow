@@ -13,8 +13,13 @@ public class CreateAnswer : MonoBehaviour
         private set { }
     }
 
-    const int spheresNumber = 6;
-    const int answerMaterialsNumber = 4;
+    int spheresNumber = 6;
+    int answerMaterialsNumber = 4;
+    public int AnswerMaterialsNumber
+    {
+        get { return answerMaterialsNumber; }
+        private set { }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +28,7 @@ public class CreateAnswer : MonoBehaviour
         int[] answerMaterialNumbers = new int[answerMaterialsNumber];
         int rand;
 
-        for(int i=0; i < answerMaterialsNumber; i++)
+        for (int i=0; i < answerMaterialsNumber; i++)
         {
             rand = Random.Range(0, spheresNumber - 1);
 
