@@ -5,7 +5,6 @@ using UnityEngine;
 public class ColumnControl : MonoBehaviour
 {
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,4 +16,5 @@ public class ColumnControl : MonoBehaviour
     {
 
     }
+
 }
